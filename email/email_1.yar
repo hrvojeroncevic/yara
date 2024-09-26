@@ -21,20 +21,20 @@ rule email_spam_workding : mail {
   
 	strings:
 		$body_string1 = "We want to make sure you don't miss out"
-    $body_string2 = "Bonus Opportunity"
-    $body_string3 = "free,"
-    $body_string4 = "earn money,"
-    $body_string5 = "act now,"
-    $body_string6 = "click here,"
-    $body_string7 = "buy now,"
-    $body_string8 = "limited time offer,"
-    $body_string9 = "get rich quick,"
-    $body_string10 = "earn extra cash,"
-    $body_string11 = "make money fast,"
-    $body_string12 = "guaranteed,"
-    $body_string13 = "winner,"
-    $body_string14 = "bonus "
-    $body_string15 = "urgent "
-		condition:
-		any 2 of them
+    		$body_string2 = "Bonus Opportunity"
+    		$body_string3 = "free,"
+    		$body_string4 = "earn money,"
+    		$body_string5 = "act now,"
+    		$body_string6 = "click here,"
+    		$body_string7 = "buy now,"
+    		$body_string8 = "limited time offer,"
+    		$body_string9 = "get rich quick,"
+    		$body_string10 = "earn extra cash,"
+    		$body_string11 = "make money fast,"
+    		$body_string12 = "guaranteed,"
+    		$body_string13 = "winner,"
+    		$body_string14 = "bonus "
+    		$body_string15 = "urgent "
+	condition:
+		2 of them
 }
