@@ -14,7 +14,7 @@ rule email_Sitpack_from_brevosend : mail {
 	condition:
 		all of them
 }
-rule email_spam_workding : mail {
+rule email_spam_wording : mail {
 	meta:
 		author = " @ronac.org"
 		description = "Like a spam message"
